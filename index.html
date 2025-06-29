@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cute Puzzle for my Cute Wife</title>
+  <style>
+    body {
+      background: #fff0f5;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      padding: 2rem;
+    }
+
+    canvas {
+      border: 3px solid #cc0055;
+      box-shadow: 0 0 10px #ff99cc;
+      cursor: pointer;
+    }
+
+    #winMessage {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.85);
+      color: white;
+      z-index: 1000;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      animation: fadeIn 1s ease forwards;
+    }
+
+    .win-box {
+      background: #ff69b4;
+      padding: 3rem 4rem;
+      border-radius: 30px;
+      box-shadow: 0 0 40px white;
+      font-size: 1.5rem;
+      animation: popIn 0.8s ease-out;
+      max-width: 90%;
+      line-height: 1.6;
+    }
+
+    .win-box h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .win-box p {
+      font-size: 1.8rem;
+      margin: 0;
+    }
+
+    @keyframes popIn {
+      0% {
+        transform: scale(0.4);
+        opacity: 0;
+      }
+
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h2>🧩 Anniversary Puzzle</h2>
+  <canvas id="puzzleCanvas"></canvas>
+
+  <div id="winMessage">
+    <div class="win-box">
+      <h1>🎉 You Did It!</h1>
+      <h1>Happy Anniversary My Jahanvi</h1>
+      <h2>It's been a very beautiful year baby. Let's keep going my sweetheart. Our marriage is just a few months away.
+        I mean we already are married but our parents and everyone has know so thats why my love and muah i love you my
+        bulbul </h2>
+    </div>
+  </div>
+
+  <script src="puzzle.js"></script>
+</body>
+
+</html>
